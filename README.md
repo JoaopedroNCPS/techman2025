@@ -38,8 +38,7 @@
 
 # Diagramas
 
-<img width="776" height="660" alt="Captura de tela 2025-09-24 105310" src="https://github.com/user-attachments/assets/48e618f1-64fe-489a-9773-33aeea174ac8" />
+<img width="708" height="492" alt="image" src="https://github.com/user-attachments/assets/4ec21695-d9c7-42fd-95f7-8ac147920d48" />
 
-
-<img width="424" height="767" alt="Captura de tela 2025-09-24 133156" src="https://github.com/user-attachments/assets/761a9635-2940-4927-bbc1-f85a5ad9dac0" />
+<img width="669" height="692" alt="Captura de tela 2025-09-24 150750" src="https://github.com/user-attachments/assets/29349c04-94ed-497a-ba91-3cefb6f39fcb" />
 
