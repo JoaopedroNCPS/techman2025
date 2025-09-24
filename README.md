@@ -1,4 +1,25 @@
 
+# Passo a Passo
+
+1. Abra a pasta do projeto no **VS Code**.
+
+2. Instale a extensão **Live Server**.
+
+3. Clique com o botão direito em `web/app.html` → **Open with Live Server**.
+
+4. O navegador abrirá algo como: `http://127.0.0.1:5500/web/app.html`.
+
+---
+
+**Caso não tenha as dependências:**
+
+1. Rode `npm init -y` e `npm install express`.
+
+2. Execute `node server.js`.
+
+3. Abra o navegador: `http://localhost:3000/web/app.html`.
+
+
 # Site
 
 <img width="1888" height="949" alt="Captura de tela 2025-09-24 133932" src="https://github.com/user-attachments/assets/f4acdf23-41a7-4bc3-9ae0-2b474aecc6f9" />
@@ -21,3 +42,4 @@
 
 
 <img width="424" height="767" alt="Captura de tela 2025-09-24 133156" src="https://github.com/user-attachments/assets/761a9635-2940-4927-bbc1-f85a5ad9dac0" />
+
