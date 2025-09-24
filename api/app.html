@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechMan - App</title>
+  <link rel="stylesheet" href="styleapp.css">
+</head>
+<body>
+  <!-- Topbar -->
+  <div class="topbar">
+    <img src="assets/techman.png" class="logo-img" alt="TechMan Logo">
+    <button id="btnNovoEquip" class="nav-btn">Novo Equipamento</button>
+    <button id="btnLogout" class="nav-btn">Sair</button>
+  </div>
+
+  <!-- Lista de equipamentos -->
+  <main class="center">
+    <div class="equip-list" id="equipList"></div>
+  </main>
+
+  <!-- Modal Comentários -->
+  <div class="modal hidden" id="modalComments">
+    <div class="modal-box">
+      <button class="modal-close" data-close>X</button>
+      <h3>Comentários</h3>
+      <div class="comments-container" id="commentsContainer"></div>
+      <button id="btnOpenAddComment" class="btn-primary">Adicionar comentário</button>
+    </div>
+  </div>
+
+  <!-- Modal Adicionar Comentário -->
+  <div class="modal hidden" id="modalAddComment">
+    <div class="modal-box small">
+      <button class="modal-close" data-close>X</button>
+      <h3>Novo Comentário</h3>
+      <textarea id="txtComment" placeholder="Digite seu comentário"></textarea>
+      <button id="btnSaveComment" class="btn-primary" disabled>Cadastrar</button>
+    </div>
+  </div>
+
+  <!-- Modal Novo Equipamento -->
+  <div class="modal hidden" id="modalNewEquip">
+    <div class="modal-box small">
+      <button class="modal-close" data-close>x</button>
+      <h3>Novo Equipamento</h3>
+      <input type="text" id="inpEquipName" placeholder="Nome do equipamento" />
+      <input type="text" id="inpEquipImage" placeholder="Imagem (ex: Mouse.png ou URL)" />
+      <input type="text" id="inpEquipDesc" placeholder="Descrição" />
+      <label>
+        <input type="checkbox" id="inpEquipAtivo" checked /> Ativo
+      </label>
+      <button type="button" id="btnCreateEquip" class="btn-primary" disabled>Cadastrar</button>
+    </div>
+  </div>
+
+  <!-- Modal Confirmação de Exclusão -->
+  <div class="modal hidden" id="modalConfirmDelete">
+    <div class="modal-box small">
+      <button class="modal-close" data-close>X</button>
+      <p>Atenção! Tem certeza que deseja excluir o equipamento?</p>
+      <button id="btnConfirmDelete" class="btn-danger">Confirmar</button>
+    </div>
+  </div>
+
+  <div id="listaEquipamentos"></div>
+
+  
+  <script src="app.js"></script>
+</body>
+</html>

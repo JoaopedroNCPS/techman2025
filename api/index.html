@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TechMan - Login</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <img src="assets\techman.png" alt="TechMan" class="logo-img" />
+  </header>
+
+  <main class="center">
+    <div class="card login-card" aria-labelledby="title">
+      <h2 id="title">Acesso ao TechMan</h2>
+      <p class="muted">Informe a senha (6 dígitos)</p>
+
+      <div id="display" class="pin-display" aria-live="polite">------</div>
+      <div id="msg" class="msg"></div>
+
+      <div class="teclado" id="teclado" aria-label="Teclado numérico">
+        <!-- numeric buttons -->
+        <button class="num" data-num="1">1</button>
+        <button class="num" data-num="2">2</button>
+        <button class="num" data-num="3">3</button>
+
+        <button class="num" data-num="4">4</button>
+        <button class="num" data-num="5">5</button>
+        <button class="num" data-num="6">6</button>
+
+        <button class="num" data-num="7">7</button>
+        <button class="num" data-num="8">8</button>
+        <button class="num" data-num="9">9</button>
+
+        <button id="clear" class="action">C</button>
+        <button class="num" data-num="0">0</button>
+        <button id="enter" class="action" disabled>↩</button>
+      </div>
+
+      <p class="hint">Somente clique nos botões acima. A senha deve conter 6 números.</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <small>TechMan — Manutenção de Equipamentos</small>
+  </footer>
+
+  <script src="login.js"></script>
+</body>
+</html>

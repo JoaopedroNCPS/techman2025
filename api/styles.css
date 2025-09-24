@@ -1,0 +1,44 @@
+/* styles.css - TechMan */
+:root{
+  --bg:#f3f7f9;
+  --card:#ffffff;
+  --accent:#0b6e77;
+  --accent-2:#0f9aa6;
+  --danger:#d64545;
+  --muted:#6b7280;
+  font-family: "Trebuchet MS", "Trebuchet", Arial, sans-serif;
+  color-scheme: light;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;background:var(--bg);color:#123}
+
+/* topbar */
+.topbar{display:flex;align-items:center;justify-content:flex-start;padding:14px 24px;background:linear-gradient(90deg,#ffffff,#eef6f8);border-bottom:1px solid rgba(0,0,0,0.04)}
+.logo-img{height:48px}
+
+/* central */
+.center{display:flex;align-items:center;justify-content:center;height:calc(100vh - 120px);padding:16px}
+.card{background:var(--card);padding:20px;border-radius:8px;box-shadow:0 6px 18px rgba(10,20,30,0.06);width:360px;max-width:95%}
+.login-card h2{font-size:18px;margin:0 0 6px}
+.muted{color:var(--muted);font-size:13px;margin-bottom:12px}
+
+/* PIN display */
+.pin-display{font-size:22px;text-align:center;padding:10px;border-radius:6px;border:1px dashed rgba(0,0,0,0.06);letter-spacing:8px;background:#f8fbfc;margin-bottom:10px}
+
+/* mensagem de erro */
+.msg{height:20px;color:var(--danger);font-weight:700;text-align:center;margin-bottom:6px}
+
+/* teclado */
+.teclado{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.teclado button{padding:16px;border-radius:10px;border:2px solid transparent;background:transparent;font-size:18px;cursor:pointer;transition:all 0.12s;user-select:none}
+.teclado button.num{background:#f3f9fa;border:1px solid rgba(0,0,0,0.04)}
+.teclado button.num:hover{background:var(--accent);color:#fff;border-color:var(--accent-2)}
+.teclado button.action{background:var(--accent);color:white;border:none;border-radius:8px}
+.teclado button.action:disabled{opacity:0.45;cursor:not-allowed;background:#b8d9db}
+
+/* hint */
+.hint{font-size:12px;color:var(--muted);margin-top:12px;text-align:center}
+
+/* footer */
+.footer{padding:12px;text-align:center;color:var(--muted);border-top:1px solid rgba(0,0,0,0.03)}

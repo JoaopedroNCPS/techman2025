@@ -1,0 +1,46 @@
+// schema.prisma
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL") 
+}
+
+model Perfil {
+  id      Int      @id @default(autoincrement())
+  nome    String   @unique
+  usuarios Usuario[]
+}
+
+model Usuario {
+  id        Int       @id @default(autoincrement())
+  nome      String
+  senha     String
+  email     String?   @unique
+  perfilId  Int
+  perfil    Perfil    @relation(fields: [perfilId], references: [id])
+  comentarios Comentario[]
+  criadoEm  DateTime  @default(now())
+}
+
+model Equipamento {
+  id          Int         @id @default(autoincrement())
+  nome        String
+  imagemUrl   String?
+  descricao   String?
+  ativo       Boolean     @default(true)
+  dataInclusao DateTime   @default(now())
+  comentarios Comentario[]
+}
+
+model Comentario {
+  id            Int       @id @default(autoincrement())
+  equipamentoId Int
+  usuarioId     Int
+  texto         String
+  dataInclusao  DateTime  @default(now())
+  equipamento   Equipamento @relation(fields: [equipamentoId], references: [id], onDelete: Cascade)
+  usuario       Usuario     @relation(fields: [usuarioId], references: [id])
+}
