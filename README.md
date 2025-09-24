@@ -10,6 +10,7 @@
 
 <img width="1904" height="940" alt="Captura de tela 2025-09-24 134237" src="https://github.com/user-attachments/assets/129b2221-944d-4d4e-a245-db75115f0455" />
 
+<img width="1898" height="941" alt="Captura de tela 2025-09-24 134726" src="https://github.com/user-attachments/assets/38c16c95-992c-4508-8472-f0440acbe829" />
 
 
 
